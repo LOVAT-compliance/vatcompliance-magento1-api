@@ -46,13 +46,13 @@ class Lovat_Interfacing_Adminhtml_InterfacingController extends Mage_Adminhtml_C
 			if (!empty($model->getData())) {
 				$model = Mage::getModel('interfacing/interfacing')->load($data[0]['interfacing_id']);
 				$model->setData('key', $postData['key']);
-				if ($model->save()) Mage::getSingleton('adminhtml/session')->addSuccess('Ключь был успешно обновлен.');
-				else Mage::getSingleton('adminhtml/session')->addError('Произошла ошибка при обновление ключа.');
+				if ($model->save()) Mage::getSingleton('adminhtml/session')->addSuccess('The key has been successfully updated.');
+				else Mage::getSingleton('adminhtml/session')->addError('There was an error generating the key.');
 			} else {
 				$model = Mage::getModel('interfacing/interfacing');
 				$model->setData($postData);
-				if ($model->save()) Mage::getSingleton('adminhtml/session')->addSuccess('Ключь был успешно обновлен.');
-				else Mage::getSingleton('adminhtml/session')->addError('Произошла ошибка создание ключа.');
+				if ($model->save()) Mage::getSingleton('adminhtml/session')->addSuccess('The key has been successfully updated.');
+				else Mage::getSingleton('adminhtml/session')->addError('There was an error generating the key.');
 			}
 		}
 
