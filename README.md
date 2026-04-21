@@ -10,4 +10,4 @@ Folder ```etc``` file ```Lovat_Interfacing.xml``` paste in the folder behind the
 Reset the cache on the site ```System->Cache Management```
 
 ## Support
-If you find a bug in our extension or have general questions about Lovat, please [contact our support team.](https://vatcompliance.co/contacts)
+If you find a bug in our extension or have general questions about Lovat, please [contact our support team.](https://lappa.org/contacts)
